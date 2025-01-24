@@ -1,121 +1,97 @@
-# Pest Infestation Risk Prediction Tool 
+# 🌟 Pest Infestation Risk Prediction Tool 🌟
 
-## Overview
+## 📝Overview
 This project is a machine learning-based application designed to:
-- Predict the type of pest from an uploaded image.
-- Assess the environmental risk of pest infestation based on temperature, humidity, and crop type.
+1️⃣Predict the type of pest from an uploaded image🐛.
+2️⃣Assess the environmental risk of pest infestation based on temperature, humidity, and crop type.
 
 The tool is built using **Streamlit** for the user interface and incorporates pre-trained machine learning models for pest classification and environmental risk prediction.
 
 ---
 
-## Features
+## 🚀Features
 
-1. **Pest Image Classification**:
-   - Upload a pest image (e.g., ants, bees, beetles, etc.).
+1. **🐞Pest Image Classification**:
+   - Upload a pest image (e.g., 🐜 ants, 🐝 bees, 🪲 beetles).
    - The model predicts the pest category based on a convolutional neural network (CNN).
 
-2. **Environmental Risk Prediction**:
-   - Input environmental conditions like temperature, humidity, and crop type.
+2. **🌍Environmental Risk Prediction**:
+   - Input 🌡️ temperature, 💧 humidity, and 🌾 crop type to get a risk level:
+      🟢 Low, 🟠 Moderate, 🔴 High
    - The model predicts the risk level (Low, Moderate, High) using a Random Forest Classifier.
-3. **Environmental Model Training**:
+3. **🛠️Environmental Model Training**:
    - Generate the environmental model (environment_model.pkl) by running the training function in the code.
    - Allows customization with your own dataset.
 
 
 ## Technologies Used
 
-- **Python**
-- **Streamlit** for the web interface
-- **TensorFlow** for pest classification (CNN model)
-- **Scikit-learn** for environmental risk prediction (Random Forest Classifier)
-- **Pandas** and **NumPy** for data handling
-- **Pillow** for image processing
-
-## Folder Structure
-
-project/
-│
-├── train_environment_model.py
-├── pest_image_processing.py      
-├── streamlite_app.py             
-├── requirements.txt              
-├── README.md                    
-├── environment_data.csv          
-├── pest_classification_model_v2.h5   
-├── environment_model.pkl   
-├── train/                        
-│   ├── ants/
-│   ├── bees/
-│   ├── beetle/
-│   ├── ...
-```
+- **🐍 Python**
+- **🎨 Streamlit** for the web interface
+- **🧠 TensorFlow** for pest classification (CNN model)
+- **🌳 Scikit-learn** for environmental risk prediction (Random Forest Classifier)
+- 📊 **Pandas** and **NumPy** for data handling
+- **🖼️ Pillow** for image processing
 
 ## Installation
 
-### Prerequisites
-- Python 3.8 or higher
-- Git installed on your system
+### Prerequisites 🛠️
+- Python 3.8+ 🐍
+- Git installed 💾
 
-### Steps
-1. Clone the repository:
+### Steps 🚶‍♂️
+1️⃣ Clone the repository:
    
    git clone https://github.com/your-username/pest-risk-prediction.git
    cd pest-risk-prediction
    
 
-2. Set up a virtual environment:
+2️⃣ Set up a virtual environment:
    
    python -m venv venv
    source venv\Scripts\activate
    
 
-3. Install dependencies:
+3️⃣ Install dependencies:
    
    pip install -r requirements.txt
    
 
-4. Train the models (if needed):
-   - Pest Classification Model:
+4️⃣ Train the models (if needed):
+   - Pest Classification Model🐛:
      python pest_image_processing.py
      
-   - Environmental Risk Model:
+   - Environmental Risk Model🌍:
      python -c "from streamlite_app import train_environment_model; train_environment_model()"
    
 
-5. Run the Streamlit application:
+5️⃣Run the Streamlit application:
    streamlit run streamlite_app.py
 
 ---
 
-## Usage
+## 🔧 Usage
 
-1. **Upload a Pest Image**:
+1️⃣ **Upload a Pest Image 🖼️**:
    - Use the sidebar to upload an image of a pest.
    - The app will classify the pest and display the predicted category.
 
-2. **Predict Environmental Risk**:
-   - Adjust the temperature, humidity, and select the crop type in the sidebar.
-   - Click the "Predict Environmental Risk" button to see the risk level.
-3. **Combined Predictions**:
+2️⃣ **Predict Environmental Risk 🌍**:
+   - Adjust 🌡️ temperature, 💧 humidity, and 🌾 crop type in the sidebar.
+   - Click "🔍 Predict Environmental Risk" to view the risk level.
+3️⃣ **Combined Predictions**:
    - If both the pest image and environmental data are provided, the app combines the predictions to suggest actionable recommendations.
 
+4️⃣ Example:
+   - Image: 🐜 Ant
+   - Temperature: 30°C 🌡️
+   - Humidity: 70% 💧
+   - Crop: 🌾 Rice
+   - Prediction:
+     🐛 Pest: Ants
+     🔴 Risk: High
 
-## Example
-
-1. Upload an image of a pest (e.g., an ant):
-   - The app predicts: `Ants`
-
-2. Set environmental conditions:
-   - Temperature: `30°C`
-   - Humidity: `70%`
-   - Crop Type: `Rice`
-
-   Prediction: `High Risk`
-
----
-
-## Requirements
+## 📋Requirements
 
 The `requirements.txt` file includes:
    streamlit
@@ -130,7 +106,7 @@ Install all dependencies using:
    - pip install -r requirements.txt
 
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - **Streamlit** for making it easy to build interactive web apps.
 - **TensorFlow** and **Scikit-learn** for providing powerful machine learning tools.
