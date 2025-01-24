@@ -2,7 +2,9 @@
 
 ## 📝Overview
 This project is a machine learning-based application designed to:
+
 1️⃣Predict the type of pest from an uploaded image🐛.
+
 2️⃣Assess the environmental risk of pest infestation based on temperature, humidity, and crop type.
 
 The tool is built using **Streamlit** for the user interface and incorporates pre-trained machine learning models for pest classification and environmental risk prediction.
@@ -42,31 +44,35 @@ The tool is built using **Streamlit** for the user interface and incorporates pr
 ### Steps 🚶‍♂️
 1️⃣ Clone the repository:
    
-   git clone https://github.com/your-username/pest-risk-prediction.git
-   cd pest-risk-prediction
+      git clone https://github.com/your-username/pest-risk-prediction.git
+   
+      cd pest-risk-prediction
    
 
 2️⃣ Set up a virtual environment:
    
-   python -m venv venv
-   source venv\Scripts\activate
+      python -m venv venv
+      source venv\Scripts\activate
    
 
 3️⃣ Install dependencies:
    
-   pip install -r requirements.txt
+      pip install -r requirements.txt
    
 
 4️⃣ Train the models (if needed):
    - Pest Classification Model🐛:
-     python pest_image_processing.py
+     
+           python pest_image_processing.py
      
    - Environmental Risk Model🌍:
-     python -c "from streamlite_app import train_environment_model; train_environment_model()"
+     
+           python -c "from streamlite_app import train_environment_model; train_environment_model()"
    
 
 5️⃣Run the Streamlit application:
-   streamlit run streamlite_app.py
+
+      streamlit run streamlite_app.py
 
 ---
 
@@ -79,6 +85,7 @@ The tool is built using **Streamlit** for the user interface and incorporates pr
 2️⃣ **Predict Environmental Risk 🌍**:
    - Adjust 🌡️ temperature, 💧 humidity, and 🌾 crop type in the sidebar.
    - Click "🔍 Predict Environmental Risk" to view the risk level.
+
 3️⃣ **Combined Predictions**:
    - If both the pest image and environmental data are provided, the app combines the predictions to suggest actionable recommendations.
 
@@ -88,7 +95,9 @@ The tool is built using **Streamlit** for the user interface and incorporates pr
    - Humidity: 70% 💧
    - Crop: 🌾 Rice
    - Prediction:
+     
      🐛 Pest: Ants
+     
      🔴 Risk: High
 
 ## 📋Requirements
