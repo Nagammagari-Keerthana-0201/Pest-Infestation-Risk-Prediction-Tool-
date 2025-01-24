@@ -47,20 +47,25 @@ The tool is built using **Streamlit** for the user interface and incorporates pr
       git clone https://github.com/your-username/pest-risk-prediction.git
    
       cd pest-risk-prediction
-   
 
-2️⃣ Set up a virtual environment:
+2️⃣ Download the dataset:
+
+   You can download the pest image dataset from Kaggle:
+
+   Pest Image Dataset: Agricultural Pests Dataset on Kaggle(https://www.kaggle.com/datasets/gauravduttakiit/agricultural-pests-dataset)
+   
+3️⃣ Set up a virtual environment:
    
       python -m venv venv
       source venv\Scripts\activate
    
 
-3️⃣ Install dependencies:
+4️⃣ Install dependencies:
    
       pip install -r requirements.txt
    
 
-4️⃣ Train the models (if needed):
+5️⃣ Train the models (if needed):
    - Pest Classification Model🐛:
      
            python pest_image_processing.py
@@ -70,7 +75,7 @@ The tool is built using **Streamlit** for the user interface and incorporates pr
            python -c "from streamlite_app import train_environment_model; train_environment_model()"
    
 
-5️⃣Run the Streamlit application:
+6️⃣ Run the Streamlit application:
 
       streamlit run streamlite_app.py
 
