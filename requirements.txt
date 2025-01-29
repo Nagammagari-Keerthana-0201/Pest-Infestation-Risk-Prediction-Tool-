@@ -4,8 +4,8 @@ setuptools
 wheel
 numpy==1.23.5
 pandas==1.5.3
-scikit-learn
+tensorflow==2.13.0  # Change if needed
+scikit-learn==1.2.2
 joblib
-Pillow
-tensorflow==2.13.0
+pillow
 streamlit
