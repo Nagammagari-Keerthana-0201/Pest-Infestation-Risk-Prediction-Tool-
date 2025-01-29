@@ -3,7 +3,7 @@ setuptools
 wheel
 numpy==1.23.5
 pandas==1.5.3
-tensorflow==2.13.0  # Change to 2.10.0 if needed
+tensorflow==2.10.0
 scikit-learn==1.2.2
 joblib
 pillow
