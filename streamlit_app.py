@@ -35,7 +35,7 @@ pest_recommendations = {
     "weevil": "Use insecticides or heat treatment for stored grains."
 }
 def train_environment_model():
-    data = pd.read_csv("D:/Intern/environment_data.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/Nagammagari-Keerthana-0201/Pest-Infestation-Risk-Prediction-Tool-/refs/heads/main/environment_data.csv")
     X = data[["temperature", "humidity", "crop_type"]]
     y = data["infestation_risk"]
     class_weights = compute_class_weight('balanced', classes=np.array([0, 1, 2]), y=y)
